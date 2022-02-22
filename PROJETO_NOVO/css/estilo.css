@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/*
+layout
+*/
+
+body{
+    background: url(../imagens/pizzaria_capa_nova_pq.jpg) no-repeat;
+    
+}
+
+
+nav.navbar-transparente{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 0px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+    
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, .5);
+    border-color: rgba(255, 255, 255, 1);
+}
+
+

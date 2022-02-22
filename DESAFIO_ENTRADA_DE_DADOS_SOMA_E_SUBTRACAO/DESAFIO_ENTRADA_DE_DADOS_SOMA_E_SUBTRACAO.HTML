@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    
+<script>
+
+/*
+1) Crie uma aplicação para efetuar cálculo aritméticos de soma e subtração.
+Considere os seguintes critérios:
+1) Ao executar o script a aplicação deve solicitar a entrada de um número, seguido de
+uma operação de soma ou subtração e posteriormente seguido de um segundo
+número.
+2) A operação deve ser inserida pelo usuário de forma textual, ou seja, quando o sistema
+solicita a operação o usuário deve informar o texto ‘soma’ ou ‘subtração’ (sem as
+aspas).
+3) Na sequência o sistema deve enviar os parâmetros para uma função efetuar o devido
+cálculo. Exemplo: calculo(num1, num2, operacao).
+4) A função deve executar o cálculo com base na operação informada pelo usuário e na
+sequência deve retornar o valor encontrado.
+5) Ao término o sistema deve fornecer a seguinte saída para o usuário:
+“O resultado é: <resultado>.”
+*A informação em vermelho é uma variável e deve ser substituída pelo seu respectivo valor
+calculada dentro da aplicação. 
+
+*/
+
+
+function calcularEscolha(escolhaSoma, escolhaSubtracao){
+
+if('Soma'){   
+    escolhaSoma
+
+
+    } else if ('Subtração'){
+    escolhaSubtracao
+}
+
+}
+
+
+/*
+var primeiroNumero = window.prompt('Digite um número')
+var operacao = window.prompt('Digite Soma ou Subtração')
+var segundoNumero = window.prompt('Digite o segundo número')
+
+primeiroNumero = Number(primeiroNumero)
+segundoNumero = Number(segundoNumero)
+
+console.log(primeiroNumero)
+console.log(operacao)
+console.log(segundoNumero)
+
+
+
+
+function exibirOperacao(operacao, primeiroNumero, segundoNumero){
+
+    if (operacao == 'Soma'){
+        resultado = primeiroNumero + segundoNumero
+    } else if(operacao == 'Subtração'){
+        resultado = primeiroNumero - segundoNumero
+    } else {
+        document.write('ERRO, verifique a escrita da operação matematica e tente novamente')
+    } 
+
+    return resultado
+        document.write(`O resultado entre ${primeiroNumero} ${operacao} ${segundoNumero} é ${resultado}`)
+    
+}
+
+*/
+
+var num1 = prompt('Digite um número');
+var operacao = prompt('Digite a operação');
+var num2 = prompt('Digite outro número');
+
+function calc(num1, num2, operacao){
+
+ num1 = parseFloat(num1);
+ num2 = parseFloat(num2);
+
+ var resultado = 0;
+
+ if(operacao == 'soma'){
+ resultado = num1 + num2;
+ }
+
+ if(operacao == 'subtracao'){
+ resultado = num1 - num2;
+ }
+
+ return resultado;
+}
+
+document.write('O resultado é: ' + calc(num1, num2, operacao)); 
+
+
+
+
+
+
+
+
+
+
+/*
+
+function exibirArtigo(id, callbackSucesso, callbackErro){
+    //logica seria: recuperar o id via requisição http, por exemplo
+    if (true){ //Nesse exemplo está sendo forçado a situação true
+        callbackSucesso('Funções de callback em JS', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dicta in dolorum officia nihil aliquam necessitatibus laudantium, nisi eum fuga nostrum neque debitis corporis illo quisquam saepe voluptas ipsum cupiditate!')
+    } else {
+        callbackErro('Erro ao recuperar os dados')
+    }
+
+}
+
+var callbackSucesso = function(titulo, descricao){
+    document.write(`<h1> ${titulo}</h1>`)
+    document.write('<hr />')
+    document.write(`<h1> ${descricao}</h1>`)
+
+
+}
+
+var callbackErro = function(erro){
+    document.write(`<p> ERRO: ${erro}</p>`)
+
+}
+
+exibirArtigo(1, /*que seria o ID na primeira linha da function, callbackSucesso, callbackErro)
+
+
+*/
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

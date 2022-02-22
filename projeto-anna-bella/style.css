@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(imagens/fundo.png);
+    width: 900px;
+    margin: auto;
+}
+
+.menu{
+    background-color: #c5c5b2;
+    color: rgba(55, 80, 117, 0.664);
+    padding: 18px;                                                                                       
+}
+
+.conteudo{
+    background-color: rgba(243, 240, 233, 0.692);
+    border:1px;
+    width: 900px;
+    padding: 10px;
+}
+
+h1{
+    color: rgba(83, 83, 64, 0.911);
+}
+
+h3{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.img-campanha{
+    border: 10px solid #c3c3ae;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
